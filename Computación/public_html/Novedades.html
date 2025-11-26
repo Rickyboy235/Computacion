@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<html>
+<head>
+    <title>Novedades MAXITECH</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS para opciones 1/p1.css">
+    <link rel="stylesheet" href="CSS para opciones 1/Categoria_producto.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header id="cabeza">
+    <div class="top-bar">
+        <!-- Nombre de la tienda -->
+        <div class="logo-nombre">
+            <h2><span style="color:white">MAXI</span><span style="color:#007BFF">TECH</span></h2>
+        </div>
+
+        <!-- Logo imagen -->
+        <div class="logo-img">
+            <img src="fondos_banners_logos/logo.png" width="120" alt="Logo MaxiTech">
+        </div>
+
+        <!-- Buscador -->
+        <div class="buscador">
+            <form>
+                <label for="busqueda" style="color:white; font-size:18px">Search:</label>
+                <input id="busqueda" type="search" name="busqueda" placeholder="Buscar..." style="width:350px; height:35px;">
+            </form>
+        </div>
+
+        <!-- Botones: Iniciar Sesión, Registrarse y logo Comprar -->
+        <div class="botones">
+    <a href="Comprar.html" class="logo-comprar">
+        <img src="fondos_banners_logos/carrito.png" alt="Comprar" width="50" height="50">
+    </a>
+            <!-- Iniciar Sesión -->
+    <a href="#login-modal" class="btn">Iniciar Sesión</a>
+    
+    <!-- MODAL DE INICIO DE SESIÓN -->
+    
+<div id="login-modal" class="modal">
+    <div class="modal-contenido">
+        <a href="#" class="cerrar">&times;</a>
+
+        <form class="login-form">
+            <h2>Iniciar Sesión</h2>
+            <p>Bienvenido a MaxiTech<br>Por favor ingresa tus datos</p>
+
+            <label for="correo">Correo:</label>
+            <input type="email" id="correo" name="correo" placeholder="Ingresa tu correo electrónico" required>
+
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" placeholder="Ingresa tu contraseña" required>
+
+            <a href="Recuperar_Contraseña.html" target="_blank" class="link">¿Olvidaste tu contraseña?</a>
+
+            <button type="submit" id="mandar">Iniciar Sesión</button>
+
+            <div class="opciones">
+                <p>O inicia sesión con</p>
+                <div class="redes">
+                    <a href="https://accounts.google.com" target="_blank" class="social">
+                        <img src="fondos_banners_logos/google.png" alt="Google">
+                        <span>Google</span>
+                    </a>
+                    <a href="https://appleid.apple.com" target="_blank" class="social">
+                        <img src="fondos_banners_logos/apple.png" alt="Apple">
+                        <span>Apple</span>
+                    </a>
+                </div>
+            </div>
+
+            <p class="registro">
+                ¿Eres nuevo aquí?<br>
+                <a href="#register-modal" class="link">Crea tu cuenta</a>
+            </p>
+        </form>
+    </div>
+</div>
+    
+    <!-- Registrarse -->
+    
+    <a href="#register-modal" class="btn">Registrarse</a>
+    
+    <!-- MODAL DE REGISTRARSE -->
+<div id="register-modal" class="modal">
+  <div class="modal-contenido">
+    <!-- Botón para cerrar -->
+    <a href="#" class="cerrar">&times;</a>
+
+    <form class="login-form">
+      <h2>Registrarse</h2>
+      <p>Crea una cuenta en MaxiTech</p>
+
+      <label for="nombre">Nombre completo:</label>
+      <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre completo" required>
+
+      <label for="correo">Correo electrónico:</label>
+      <input type="email" id="correo" name="correo" placeholder="Ingresa tu correo" required>
+
+      <label for="telefono">Teléfono:</label>
+      <input type="tel" id="telefono" name="telefono" placeholder="Ej. 987654321" required>
+
+      <label for="password">Contraseña:</label>
+      <input type="password" id="password" name="password" placeholder="Crea una contraseña" required>
+
+      <label for="confirmar">Confirmar contraseña:</label>
+      <input type="password" id="confirmar" name="confirmar" placeholder="Repite tu contraseña" required>
+
+      <button type="submit" id="registrar">Registrarse</button>
+
+      <p class="registro">
+        ¿Ya tienes una cuenta?<br>
+        <a href="#login-modal" class="link">Inicia sesión aquí</a>
+      </p>
+    </form>
+  </div>
+</div>
+    
+        </div>
+    </div>
+
+        <!-- Barra de opciones -->
+        <nav class="menu-opciones">
+            <ul>
+                <li><a href="Recomendaciones.html">Recomendaciones</a></li>
+                <li><a href="Productos.html">Te puede interesar</a></li>
+                <li><a href="Marcas.html">Marcas</a></li>
+                <li><a href="ofertas.html">Ofertas</a></li>
+                <li><a href="Locales.html">Locales</a></li>
+                <li><a href="Sobre Nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="Blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <br>
+    <marquee>
+        <h2 style="color:white; margin-bottom: 30px;">
+            ¡Nuevos productos cada semana en MAXITECH!
+        </h2>
+    </marquee>
+
+    <!-- FILA 1 -->
+    
+    <div class="contenedor-productos">
+        <!-- Producto 1 -->
+        <div class="cuadro-producto">
+            <a href="#" target="_blank">
+                <img class="imagen img-opcion" src="novedades/ASUS TUF.jpg">
+            </a>
+            <p id="nombre1">Laptop ASUS TUF Gaming F15 (2024)</p>
+            <fieldset class="boton"><p style="color:white;">S/4599.00</p></fieldset>
+        </div>
+
+        <!-- Producto 2 -->
+        <div class="cuadro-producto">
+            <a href="#" target="_blank">
+                <img class="imagen img-opcion" src="novedades/Logitec G502.webp">
+            </a>
+            <p id="nombre1">Mouse Logitech G502 HERO RGB</p>
+            <fieldset class="boton"><p style="color:white;">S/299.00</p></fieldset>
+        </div>
+
+        <!-- Producto 3 -->
+        <div class="cuadro-producto">
+            <a href="#" target="_blank">
+                <img class="imagen img-opcion" src="novedades/Samsung G5 27 curved.webp">
+            </a>
+            <p id="nombre1">Monitor Samsung Odyssey G5 Curvo 27</p>
+            <fieldset class="boton"><p style="color:white;">S/1399.00</p></fieldset>
+        </div>
+    </div>
+    
+    <!-- FILA 2 -->
+    
+    <div class="contenedor-productos">
+        <div class="cuadro-producto">
+            <a href="#"><img class="imagen img-opcion" src="novedades/Redragon kumara K552.webp"></a>
+            <p id="nombre1">Teclado Mecánico Redragon Kumara K552 RGB</p>
+            <fieldset class="boton"><p style="color:white;">S/219.00</p></fieldset>
+        </div>
+
+        <div class="cuadro-producto">
+            <a href="#"><img class="imagen img-opcion" src="novedades/Kingston NV2 1TB.webp"></a>
+            <p id="nombre1">SSD Kingston NV2 1TB NVMe M.2</p>
+            <fieldset class="boton"><p style="color:white;">S/279.00</p></fieldset>
+        </div>
+
+        <div class="cuadro-producto">
+            <a href="#"><img class="imagen img-opcion" src="novedades/Lenovo tab M11.webp"></a>
+            <p id="nombre1">Tablet Lenovo Tab M11 (2024)</p>
+            <fieldset class="boton"><p style="color:white;">S/799.00</p></fieldset>
+        </div>
+    </div>
+    
+    <!-- FILA 3 -->
+    
+    <div class="contenedor-productos">
+        <div class="cuadro-producto">
+            <a href="#"><img class="imagen img-opcion" src="novedades/Sony WH-CH520.webp"></a>
+            <p id="nombre1">Audífonos Sony WH-CH520 Bluetooth</p>
+            <fieldset class="boton"><p style="color:white;">S/329.00</p></fieldset>
+        </div>
+
+        <div class="cuadro-producto">
+            <a href="#"><img class="imagen img-opcion" src="novedades/HP Pavilion x360.jpg"></a>
+            <p id="nombre1">Laptop HP Pavilion x360 Touch 14</p>
+            <fieldset class="boton"><p style="color:white;">S/3899.00</p></fieldset>
+        </div>
+
+        <div class="cuadro-producto">
+            <a href="#"><img class="imagen img-opcion" src="novedades/Amazfit bip 5.jpg"></a>
+            <p id="nombre1">Smartwatch Amazfit Bip 5</p>
+            <fieldset class="boton"><p style="color:white;">S/459.00</p></fieldset>
+        </div>
+    </div>
+    
+    <!-- FILA 4 -->
+    
+    <div class="contenedor-productos">
+        <div class="cuadro-producto">
+            <a href="#"><img class="imagen img-opcion" src="novedades/TP-Link archer AX73.webp"></a>
+            <p id="nombre1">Router TP-Link Archer AX73 WiFi 6</p>
+            <fieldset class="boton"><p style="color:white;">S/749.00</p></fieldset>
+        </div>
+
+        <div class="cuadro-producto">
+            <a href="#"><img class="imagen img-opcion" src="novedades/ASUS mini PC PN64.webp"></a>
+            <p id="nombre1">Mini PC ASUS PN64 Intel i7 12th Gen</p>
+            <fieldset class="boton"><p style="color:white;">S/2999.00</p></fieldset>
+        </div>
+
+        <div class="cuadro-producto">
+            <a href="#"><img class="imagen img-opcion" src="novedades/Cougar armor one gaming chair.jpg"></a>
+            <p id="nombre1">Silla Gamer Cougar Armor One</p>
+            <fieldset class="boton"><p style="color:white;">S/899.00</p></fieldset>
+        </div>
+    </div>
+</body>
+</html>

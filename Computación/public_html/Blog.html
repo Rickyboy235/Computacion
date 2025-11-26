@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Blog - MaxiTech</title>
+  <link rel="stylesheet" href="CSS para opciones 2/Blog.css">
+</head>
+<body>
+
+<!-- ======================= ENCABEZADO ======================== -->
+<header id="cabeza">
+  <div class="top-bar">
+    <!-- Logo y nombre (solo visibles antes de iniciar sesión) -->
+    <div class="logo-nombre" id="nombre-empresa">
+      <h2><span style="color:white">MAXI</span><span style="color:#007BFF">TECH</span></h2>
+    </div>
+
+    <div class="logo-img" id="logo-empresa">
+      <img src="fondos_banners_logos/logo.png" width="120" alt="Logo MaxiTech">
+    </div>
+
+    <!-- Buscador -->
+    <div class="buscador" id="buscador">
+      <label style="color:white">Buscar:</label>
+      <input type="search" placeholder="Buscar...">
+    </div>
+
+    <!-- Botones de inicio y registro -->
+    <div class="botones" id="botones-login">
+      <a href="#login-modal" class="btn">Iniciar Sesión</a>
+      <a href="#register-modal" class="btn">Registrarse</a>
+    </div>
+
+    <!-- Botón de cerrar sesión (solo visible si hay usuario) -->
+    <div id="user-info" class="user-info"></div>
+  </div>
+</header>
+
+<!-- ======================= MODAL LOGIN ======================= -->
+<div id="login-modal" class="modal">
+  <div class="modal-contenido">
+    <a href="#" class="cerrar">&times;</a>
+
+    <form class="login-form" onsubmit="return false;">
+      <h2>Iniciar Sesión</h2>
+      <p>Bienvenido a MaxiTech<br>Por favor ingresa tus datos</p>
+
+      <label for="correo">Correo:</label>
+      <input type="email" id="correo" placeholder="Ingresa tu correo electrónico" required>
+
+      <label for="password">Contraseña:</label>
+      <input type="password" id="password" placeholder="Ingresa tu contraseña" required>
+
+      <a href="Recuperar_Contraseña.html" target="_blank" class="link">¿Olvidaste tu contraseña?</a>
+
+      <button type="button" id="mandar">Iniciar Sesión</button>
+
+      <p class="registro">
+        ¿Eres nuevo aquí?<br>
+        <a href="#register-modal" class="link">Crea tu cuenta</a>
+      </p>
+    </form>
+  </div>
+</div>
+
+<!-- ======================= MODAL REGISTRO ======================= -->
+<div id="register-modal" class="modal">
+  <div class="modal-contenido">
+    <a href="#" class="cerrar">&times;</a>
+
+    <form class="login-form" onsubmit="return false;">
+      <h2>Registrarse</h2>
+      <p>Crea una cuenta en MaxiTech</p>
+
+      <label for="nombre">Nombre completo:</label>
+      <input type="text" id="nombre" placeholder="Ingresa tu nombre completo" required>
+
+      <label for="correo-reg">Correo electrónico:</label>
+      <input type="email" id="correo-reg" placeholder="Ingresa tu correo" required>
+
+      <label for="telefono">Teléfono:</label>
+      <input type="tel" id="telefono" placeholder="Ej. 987654321" required>
+
+      <label for="password-reg">Contraseña:</label>
+      <input type="password" id="password-reg" placeholder="Crea una contraseña" required>
+
+      <label for="confirmar">Confirmar contraseña:</label>
+      <input type="password" id="confirmar" placeholder="Repite tu contraseña" required>
+
+      <button type="submit" id="registrar">Registrarse</button>
+
+      <p class="registro">
+        ¿Ya tienes una cuenta?<br>
+        <a href="#login-modal" class="link">Inicia sesión aquí</a>
+      </p>
+    </form>
+  </div>
+</div>
+
+<!-- ======================= CONTENIDO BLOG ======================== -->
+<main class="contenido-blog">
+  <h1>Reseñas de Usuarios</h1>
+
+  <div id="lista-reseñas" class="lista-reseñas"></div>
+
+  <hr>
+
+  <section class="nueva-resena">
+    <h2>Agregar nueva reseña</h2>
+
+    <textarea id="texto-resena" placeholder="Escribe tu opinión..."></textarea>
+
+    <label>Calificación:</label>
+    <select id="estrellas">
+      <option value="5">5 ★</option>
+      <option value="4">4 ★</option>
+      <option value="3">3 ★</option>
+      <option value="2">2 ★</option>
+      <option value="1">1 ★</option>
+    </select>
+
+    <button id="btn-publicar" class="btn">Publicar</button>
+  </section>
+</main>
+
+<script src="JavaScript1/js_blog.js" defer></script>
+</body>
+</html>
+

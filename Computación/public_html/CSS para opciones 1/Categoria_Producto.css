@@ -1,0 +1,34 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 7 set. 2025, 3:04:43 p. m.
+    Author     : Leiston
+*/
+
+/*Botones de productos*/
+
+.boton{
+    height:40px; 
+    width:220px; 
+    background-color:#007BFF;
+    border: 2px solid black;
+    align-content: center
+}
+
+.boton:hover {
+    background: #0056b3
+}
+
+/*Titulo de productos*/
+
+#nombre1 {
+    margin-top:0; 
+    color:white; 
+    display: inline-block
+}
+
+#nombre1:hover {
+    text-decoration: underline;
+}

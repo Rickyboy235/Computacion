@@ -1,0 +1,150 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 29 set. 2025, 1:26:08 p. m.
+    Author     : ASUS
+*/
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #2C2C2C;
+    color: #333;
+}
+
+/* Encabezado */
+.encabezado {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #2C2C2C; /* mismo color de fondo para que no se note */
+}
+
+/* Título con animación */
+.titulo-animado {
+    text-align: center;
+    font-size: 40px;
+    color: #00FFFF;
+    animation: aparecer 2s ease-in-out;
+}
+
+.subtitulo {
+    width: 50%;
+    margin: 0 auto;
+    text-align: justify;
+    font-size: 20px;
+    color: #f5f5f5;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+h2 {
+    color: #00FFFF;
+}
+
+p {
+    color: #f5f5f5;
+}
+
+/* Video centrado */
+.video-seccion {
+    text-align: center;  /* centra todo lo dentro de la sección */
+    margin: 40px 0;
+}
+
+/* Animación de aparición */
+@keyframes aparecer {
+    from { opacity: 0; transform: translateY(-30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Caja para misión y visión */
+.mision-vision {
+    display: flex;
+    justify-content: space-around;
+    margin: 40px 0;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.video-seccion video {
+    display: block;
+    margin: 0 auto;       /* centra el video */
+    border-radius: 10px;  /* opcional: bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.caja {
+    width: 40%;
+    padding: 20px;
+    background: #1B1B1B;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Animación de entrada desde abajo */
+.animar-arriba {
+    animation: subir 2s ease;
+}
+
+@keyframes subir {
+    from { opacity: 0; transform: translateY(50px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Animación de entrada desde la derecha */
+.animar-derecha {
+    animation: derecha 2s ease;
+}
+
+@keyframes derecha {
+    from { opacity: 0; transform: translateX(100px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+/*------------ Consultas responsivas --------*/
+
+/* Pantallas pequeñas (celulares) */
+@media (max-width: 768px) {
+    .titulo-animado {
+        font-size: 28px;   /* título más pequeño */
+    }
+
+    .subtitulo {
+        width: 90%;        /* subtítulo ocupa casi todo el ancho */
+        font-size: 16px;
+    }
+
+    .mision-vision {
+        flex-direction: column; /* las cajas se apilan */
+        align-items: center;
+    }
+
+    .caja {
+        width: 90%;         /* cada caja ocupa casi toda la pantalla */
+        margin-bottom: 20px;
+    }
+
+    .video-seccion video {
+        width: 100%;        /* video se ajusta al ancho */
+        height: auto;
+    }
+}
+
+/*  Pantallas medianas (tablets) */
+@media (max-width: 1024px) {
+    .titulo-animado {
+        font-size: 32px;
+    }
+
+    .subtitulo {
+        width: 70%;
+        font-size: 18px;
+    }
+
+    .caja {
+        width: 45%; /* un poco más pequeñas para tablets */
+    }
+}
+

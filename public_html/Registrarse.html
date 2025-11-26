@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Registrar Nueva Cuenta</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="CSS para opciones 1/Register.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <form>
+            <table  align="center">
+            <tr>
+                <td height="115" width="300"></td>
+            </tr>
+<!--Pantalla de Inicio de Sesión-->
+            <tr>       <!--Inicio-->
+                <td align="center" height="300" width="375">
+<!--Dentro del cuadro-->
+                    <fieldset style="border-radius:4px; border:2px solid black;
+                        background-color:white; padding:0">
+                           <table border="1" cellspacing="0" align="center">
+                               <tr>   <!--Inicio-->
+                                  <td style="background-color:#5A00A5; color:white; font-family:'Montserrat', 
+                                       sans-serif;" 
+                                          align="center" height="40" width="400">
+                                            Registro
+                                  </td>  
+                               </tr>   <!--Fin-->
+<!--Formulario-->
+                               <tr>    <!--Inicio-->
+                                   <td align="center" height="50" width="400">
+                                       <p style="margin-top:0; font-family:'Montserrat', 
+                                          sans-serif; font-size:13px; color:#1A1A1A"><br>
+                                           Por favor Ingrese sus datos
+                                       </p>
+                                   </td>  
+                               </tr>   <!--Fin-->
+                               <tr>    <!--Inicio-->
+                                   <td align="center" height="60" width="400">
+<!--Nombres, Apellidos y fecha de nacimiento-->
+<!--Nombre -->
+                                      <input type="text" name="nombre" 
+                                          placeholder="Nombre*" id="name" required>                                      
+                                   </td>  
+                               </tr>   <!--Fin-->
+<!--Apellido--> 
+                               <tr>    <!--Inicio-->
+                                   <td align="center" height="60" width="400">
+                                       <input type="password" name="contraseña" 
+                                           placeholder="Apellido*" id="surname" required> 
+                                   </td>  
+                               </tr>      <!--Fin-->
+<!--DNI-->
+                               <tr>       <!--Inicio-->
+                                   <td align="center" height="60" width="400">
+                                       <input type="text" name="DNI"
+                                            placeholder="DNI*" id="dni" required> 
+                                   </td>
+                               </tr>     <!--Final-->
+<!--Telefono-->
+                               <tr>
+                                   <td align="center" height="60" width="400">
+                                       <input type="tel" name="Telefono"
+                                              placeholder="Telefono*" id="telef" required>
+                                   </td>
+                               </tr>
+<!--Correo electronico-->                               
+                               <tr>
+                                   <td align="center" height="60" width="400">
+                                       <input type="tel" name="Telefono"
+                                              placeholder="Correo Electrónico*" id="telef" required>
+                                   </td>
+                               </tr>
+<!--Crear contraseña-->       
+                               <tr>
+                                  <td align="center" height="60" width="400">
+                                       <input type="password" name="contraseña"
+                                              placeholder="Crea tu contraseña*" id="contraseña" required>
+                                  </td>  
+                               </tr> 
+                               
+                               <tr>
+                                   <td align="center" height="60" width="400">
+                                       <input type="checkbox" name="p1" value="opcion1" required>
+                                       <label style="font-size:12px; font-family: 'Roboto', sans-serif">
+                                           <span style="color:black">He leído y estoy de acuerdo con las </span>
+                                           <a href="https://www.coursera.org/" target="_blank">
+                                             <span style="color:#0000EE">politicas de la empresa</span> 
+                                           </a>
+                                       </label>
+                                       <input type="checkbox" name="p1" value="opcion1" required>
+                                       <label style="font-size:12px; font-family: 'Roboto', sans-serif">
+                                           <span style="color:black">Acepto los</span>
+                                           <a href="https://www.coursera.org/" target="_blank">
+                                             <span style="color:#0000EE">términos y condiciones</span> 
+                                           </a>
+                                       </label>
+                                   </td>
+                               </tr>
+<!--Mandar datos-->
+            <tr>       <!--Inicio-->
+                <td align="center" height="78" width="400">
+                    <input id="Iniciar" type="submit" name="mandar" 
+                        value="Iniciar Sesión" required>
+                </td>  
+            </tr>      <!--Fin--> 
+        </table>
+            <tr>
+                <td height="115" width="300"></td>            
+            </tr>
+         </table>
+      </form>
+    </body>
+</html>

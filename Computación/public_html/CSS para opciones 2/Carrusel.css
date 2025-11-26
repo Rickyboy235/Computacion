@@ -1,0 +1,124 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 13 oct. 2025, 12:12:31 p. m.
+    Author     : ASUS
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #f6f7f8;
+  overflow-x: hidden;
+}
+
+/* CARRUSEL */
+.slider {
+  width: 100%;
+  max-width: 800px;
+  height: 300px;
+  margin: 40px auto;
+  overflow: hidden;
+  border-radius: 15px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* PISTA */
+.slider-track {
+  display: flex;
+  width: 400%;
+  animation: slide 24s infinite ease-in-out;
+}
+
+/* PRODUCTO */
+.producto {
+  width: 100%;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* ✅ CENTRA EL CONTENIDO */
+  gap: 40px;
+  text-align: left;
+  background-color: white;
+  border-radius: 15px;
+}
+
+/* IMAGEN */
+.imagen img {
+  width: 160px;
+  height: 160px;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* INFORMACIÓN */
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.titulo {
+  color: purple;
+  font-weight: bold;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.precio {
+  color: red;
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+}
+
+.boton {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.boton:hover {
+  background-color: purple;
+}
+
+/* ANIMACIÓN */
+@keyframes slide {
+  0%, 15% { transform: translateX(0); }
+  20%, 35% { transform: translateX(-100%); }
+  40%, 55% { transform: translateX(-200%); }
+  60%, 75% { transform: translateX(-300%); }
+  80%, 100% { transform: translateX(0); }
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .producto {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .imagen img {
+    width: 140px;
+    height: 140px;
+  }
+
+  .info {
+    align-items: center;
+  }
+}

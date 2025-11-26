@@ -1,0 +1,160 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 30 oct. 2025, 10:52:01 a. m.
+    Author     : ASUS
+*/
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #1F1F28;
+  color: #2d3436;
+}
+
+/* -------- ENCABEZADO -------- */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #223149;
+  color: #FFFFFF;
+  padding: 10px 20px;
+  flex-wrap: wrap;
+}
+
+header h1 {
+  font-size: 22px;
+  margin: 10px 0;
+}
+
+/* -------- CARRITO -------- */
+.carrito {
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.carrito img {
+  width: 45px;
+  height: 45px;
+}
+
+.carrito span {
+  background-color: #d63031;
+  color: white;
+  border-radius: 50%;
+  padding: 3px 8px;
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  font-size: 0.8em;
+  font-weight: bold;
+}
+
+/* -------- CONTENIDO PRINCIPAL -------- */
+main {
+  padding: 20px;
+  text-align: center;
+}
+
+main h2 {
+  color: #0984e3;
+  margin-bottom: 20px;
+}
+
+/* -------- TARJETAS DE PRODUCTOS -------- */
+.productos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.card {
+  background: #2B2E44;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  width: 220px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  color: #FFFFFF
+}
+
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+.card img {
+  width: 100%;
+  height: 140px;
+  object-fit: contain;
+}
+
+.card h3 {
+  color: #FFFFFF;
+  font-size: 16px;
+  margin: 10px 0 5px;
+}
+
+/* -------- BOTONES -------- */
+button {
+  margin: 5px;
+  background-color: #00b894;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #55efc4;
+  color: #2d3436;
+}
+
+/* -------- RESPONSIVE -------- */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .productos {
+    gap: 15px;
+  }
+
+  .card {
+    width: 90%;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 18px;
+  }
+
+  .carrito img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .carrito span {
+    font-size: 0.7em;
+    top: -4px;
+    right: -8px;
+  }
+
+  button {
+    width: 100%;
+    padding: 10px;
+  }
+}
+

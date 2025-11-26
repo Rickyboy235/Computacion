@@ -1,0 +1,91 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 10 oct. 2025, 3:31:40 p. m.
+    Author     : ASUS
+*/
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    
+}
+
+/* Encabezado centrado con Flexbox */
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #2C2C2C;
+    color: white;
+    text-align: center;
+    padding: 25px 10px;
+}
+
+/* Contenedor principal con Grid Layout */
+.grid-locales {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Cada local */
+.local {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* Título de cada local */
+.local h2 {
+    text-align: center;
+    color: #1565c0;
+    font-size: 20px;
+}
+
+/* Imagen de cada local */
+.local img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.local img:hover {
+    transform: scale(1.05);
+}
+
+/* Mapa de cada local */
+.local iframe {
+    width: 100%;
+    height: 250px;
+    border: none;
+    border-radius: 8px;
+}
+
+/* Pie de página */
+footer {
+    background-color: #2C2C2C;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+}
+
+/* Diseño responsivo básico */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+    
+    .local iframe {
+        height: 200px;
+    }
+}

@@ -1,0 +1,99 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 30 ago. 2025, 1:19:50 p. m.
+    Author     : ASUS
+*/
+
+/*Cabecera de la pagina de sesion*/
+
+#cabeza {
+    border: 2px solid #D3D3D3;
+    background-color: black;
+    border-radius: 20px;
+}
+
+/*Cuerpo de la pagina de sesion*/
+
+body {
+   background-image: url("../fondos y banners/fondo1.jpg"); 
+   background-size: cover;
+   background-position: center; 
+}
+
+/*Boton de Inicio de Sesión*/
+
+#login {
+   height: 25px;
+   width: 140px;
+   border: 2px #000000;
+   background-color: #5A00A5;
+   border-radius: 20px;
+}
+
+/*Boton de Registro*/
+
+#register {
+   height: 25px;
+   width: 140px;
+   border: 2px #000000;
+   background-color: #5A00A5;
+   border-radius: 20px;
+}
+
+/*Botones de opciones*/
+
+#boton1{
+    display:inline-block; 
+    height:40px; 
+    width:220px; 
+    background-color:#007BFF;
+    border: 2px solid black;
+}
+
+#boton2{
+    display:inline-block; 
+    height:40px; 
+    width:220px; 
+    background-color:#007BFF;
+    border: 2px solid black;
+}
+
+#boton3{
+    display:inline-block; 
+    height:40px; 
+    width:220px; 
+    background-color:#007BFF;
+    border: 2px solid black;
+}
+
+#boton4{
+    display:inline-block; 
+    height:40px; 
+    width:220px; 
+    background-color:#007BFF;
+    border: 2px solid black;
+}
+
+#boton5{
+    display:inline-block; 
+    height:40px; 
+    width:200px; 
+    background-color:#007BFF;
+    border: 2px solid black;
+}
+
+/*Linea Horizontal*/
+
+#hr{
+    border: 2px solid #6A0DAD;
+}
+
+#pie{
+    background-color:black;
+    border: 2px solid white;
+    border-radius:20px;
+}
+

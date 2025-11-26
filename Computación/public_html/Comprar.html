@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Carrito de Compras MAXITECH</title>
+  <link rel="stylesheet" href="CSS para opciones 2/buy.css">
+</head>
+<body>
+    
+    <!-- MODAL DE NOTIFICACIÓN -->
+<div id="modalNotificacion" style="display:none;">
+  <p id="mensajeNotificacion"></p>
+</div>
+    
+  <!-- ENCABEZADO -->
+  <header>
+    <h1>Tienda de Productos Tecnológicos - MaxiTech</h1>
+
+    <!-- Carrito -->
+    <div class="carrito">
+      <img src="fondos_banners_logos/carrito.png" alt="Carrito de compras" width="50">
+      <span>0</span>
+    </div>
+  </header>
+
+  <main>
+    <h2>Productos disponibles</h2>
+
+    <div class="productos">
+      <div class="card">
+        <img src="productos/Auriculares HyperX Cloud II.jpg" alt="Auriculares HyperX Cloud II" width="180">
+        <h3>Auriculares HyperX Cloud II</h3>
+        <p>Categoría: Accesorios</p>
+        <p>Precio: S/.450</p>
+        <button onclick="verProducto(0)">Ver</button>
+        <button onclick="comprarProducto(0)">Comprar</button>
+      </div>
+
+      <div class="card">
+        <img src="productos/All in One ASUS V241 23.8.jpg" alt="All in One ASUS V241 23.8" width="180">
+        <h3>All in One ASUS V241 23.8</h3>
+        <p>Categoría: Computadora</p>
+        <p>Precio: S/.2800</p>
+        <button onclick="verProducto(1)">Ver</button>
+        <button onclick="comprarProducto(1)">Comprar</button>
+      </div>
+
+      <div class="card">
+        <img src="ofertas/mouse.png" alt="Mouse TE-1210G NEGRO" width="180">
+        <h3>Mouse TE-1210G NEGRO</h3>
+        <p>Categoría: Accesorios</p>
+        <p>Precio: S/.85</p>
+        <button onclick="verProducto(2)">Ver</button>
+        <button onclick="comprarProducto(2)">Comprar</button>
+      </div>
+    </div>
+  </main>
+
+  <!-- MODAL -->
+  <div id="modalDetalle" style="display:none;">
+    <div id="contenidoDetalle">
+      <img id="imagenDetalle" src="" alt="Imagen del producto" width="250">
+      <h2 id="nombreDetalle"></h2>
+      <p id="categoriaDetalle"></p>
+      <p id="precioDetalle"></p>
+      <hr>
+      <h4>Descripción del producto</h4>
+      <ul id="listaDetalle"></ul>
+      <div id="botonesDetalle">
+        <button onclick="verDescuento()">Ver descuento</button>
+        <button onclick="verPagos()">Opciones de pago</button>
+        <button onclick="cerrarModal()">Cerrar</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="JavaScript1/js_comprar.js"></script>
+</body>
+</html>
+
+

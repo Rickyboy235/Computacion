@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Libro de Reclamaciones</title>
+    <link rel="stylesheet" href="CSS para opciones 2/reclamaciones.css">
+</head>
+<body>
+
+    <!-- Botón de retorno -->
+    <h1>Libro de Reclamaciones</h1>
+
+    <form>
+        <fieldset>
+            <legend>Datos del Cliente</legend>
+
+            <label>Nombre completo:</label><br>
+            <input type="text" name="nombre" required><br><br>
+
+            <label>DNI:</label><br>
+            <input type="text" name="dni" required><br><br>
+
+            <label>Teléfono:</label><br>
+            <input type="text" name="telefono" required><br><br>
+
+            <label>Correo:</label><br>
+            <input type="email" name="correo" required><br>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Detalle del Reclamo</legend>
+
+            <label>Producto o servicio:</label><br>
+            <input type="text" name="producto" required><br><br>
+
+            <label>Tipo de reclamo:</label><br>
+            <select name="tipo">
+                <option>Queja</option>
+                <option>Reclamo</option>
+                <option>Sugerencia</option>
+            </select><br><br>
+
+            <label>Descripción:</label><br>
+            <textarea name="descripcion" rows="5" cols="40"></textarea>
+        </fieldset>
+
+        <br>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpiar">
+
+    </form>
+
+</body>
+</html>

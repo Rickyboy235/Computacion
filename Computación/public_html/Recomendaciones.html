@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recomendaciones - MAXITECH</title>
+  <link rel="stylesheet" href="CSS para opciones 2/Recomendaciones.css">
+</head>
+
+<body>
+  <!-- ======================= ENCABEZADO ======================== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">MiCatálogo</a>
+
+      <button id="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+        <span class="hamburger"></span>
+      </button>
+
+      <nav id="main-nav" class="main-nav" role="navigation">
+        <ul class="nav-list">
+          <li><a href="Principal.html" class="nav-link" data-section="inicio">Inicio</a></li>
+
+          <!-- =================== RECOMENDACIONES =================== -->
+          <li class="has-submenu">
+            <a href="#" class="nav-link recomend-link" aria-haspopup="true" aria-expanded="false">Recomendaciones ▾</a>
+
+            <div class="submenu" id="recomend-panel" role="menu" aria-hidden="true">
+              <div class="submenu-header">
+                <h3>Recomendaciones</h3>
+                <button id="close-panel" aria-label="Cerrar">✕</button>
+              </div>
+
+              <div class="submenu-body">
+
+                <!-- TRABAJO REMOTO -->
+                <div class="cat">
+                  <button class="cat-header" aria-expanded="false">Trabajo remoto</button>
+                  <ul class="cat-list">
+                    <li><button class="item-btn"
+                      data-img="Recomendaciones/Auriculares con cancelación de ruido.jpg"
+                      data-title="Audífonos Bluetooth ANC Havit"
+                      data-desc="Audífonos de diadema inalámbricos con cancelación activa de ruido de -30 dB. Diseño plegable y excelente autonomía."
+                      data-price="S/ 199.00">Audífonos ANC Havit</button></li>
+
+                    <li><button class="item-btn"
+                      data-img="Recomendaciones/Monitor LED 24 plg.jpg"
+                      data-title="Monitor Lenovo ThinkVision T24t-20"
+                      data-desc="Monitor de 23.8 pulgadas Full HD IPS con panel táctil, ideal para trabajo remoto y multitarea."
+                      data-price="S/ 899.00">Lenovo ThinkVision 24"</button></li>
+
+                    <li><button class="item-btn"
+                      data-img="Recomendaciones/Soporte ergonómico para laptop.jpg"
+                      data-title="Soporte ajustable de aluminio para laptop"
+                      data-desc="Soporte ergonómico de aluminio con ajuste de altura y ángulo para mejorar postura y ventilación."
+                      data-price="S/ 79.00">Soporte ajustable aluminio</button></li>
+                  </ul>
+                </div>
+
+                <!-- GAMING -->
+                <div class="cat">
+                  <button class="cat-header" aria-expanded="false">Gaming</button>
+                  <ul class="cat-list">
+                    <li><button class="item-btn"
+                      data-img="Recomendaciones/Teclado mecánico gaming.jpg"
+                      data-title="Teclado Mecánico Compacto RGB"
+                      data-desc="Teclado mecánico compacto de 68 teclas con iluminación RGB y diseño ligero. Ideal para setups gamer minimalistas."
+                      data-price="S/ 259.00">Teclado Compacto RGB</button></li>
+
+                    <li><button class="item-btn"
+                      data-img="Recomendaciones/Tarjeta gráfica.jpg"
+                      data-title="Tarjeta Gráfica Gamer Pro Render"
+                      data-desc="Tarjeta gráfica optimizada para gaming y creación de contenido. Excelente rendimiento en edición y renderizado."
+                      data-price="S/ 899.00">GPU Gamer Pro</button></li>
+
+                    <li><button class="item-btn"
+                      data-img="Recomendaciones/Ratones gaming.jpg"
+                      data-title="Mouse Gamer Salandens 6800 DPI"
+                      data-desc="Ratón gamer ergonómico con 7 botones programables, iluminación LED en 7 colores y sensor de 6800 DPI."
+                      data-price="S/ 129.00">Mouse Gamer 6800 DPI</button></li>
+                  </ul>
+                </div>
+
+                <!-- ESTUDIO -->
+                <div class="cat">
+                  <button class="cat-header" aria-expanded="false">Estudio</button>
+                  <ul class="cat-list">
+                    <li><button class="item-btn"
+                      data-img="Recomendaciones/Kobo Clara BW.jpg"
+                      data-title="Kobo Clara 2E + Funda Protectora"
+                      data-desc="Lector electrónico de 6 pulgadas perfecto para estudio y lectura prolongada. Incluye funda protectora transparente."
+                      data-price="S/ 499.00">Kobo Clara 2E</button></li>
+
+                    <li><button class="item-btn"
+                      data-img="Recomendaciones/Auriculares de concentracion.jpg"
+                      data-title="Audífonos Bluetooth con Pantalla Inteligente"
+                      data-desc="Auriculares inalámbricos con ANC, pantalla inteligente, control de cámara y función para llamadas."
+                      data-price="S/ 159.00">Audífonos Inteligentes</button></li>
+
+                    <li><button class="item-btn"
+                      data-img="Recomendaciones/SSD.jpg"
+                      data-title="SSD SanDisk Plus 480GB"
+                      data-desc="Unidad SSD interna SATA III ideal para acelerar laptops y equipos de estudio. Mejora tiempos de carga y rendimiento."
+                      data-price="S/ 189.00">SanDisk SSD 480GB</button></li>
+                  </ul>
+                </div>
+
+                <!-- OFICINA EMPRESARIAL -->
+                <div class="cat">
+                  <button class="cat-header" aria-expanded="false">Oficina empresarial</button>
+                  <ul class="cat-list">
+                    <li><button class="item-btn"
+                      data-img="Recomendaciones/Webcams de alta calidad.jpg"
+                      data-title="Webcam Full HD con Micrófono"
+                      data-desc="Cámara Full HD con micrófono integrado, ideal para videoconferencias corporativas."
+                      data-price="S/ 129.00">Webcam Full HD</button></li>
+
+                    <li><button class="item-btn"
+                      data-img="Recomendaciones/Impresora.jpg"
+                      data-title="Epson EcoTank L5590 Multifuncional"
+                      data-desc="Impresora 4 en 1 con Wi-Fi, sistema de tinta continua y funciones avanzadas para oficina."
+                      data-price="S/ 1199.00">EcoTank L5590</button></li>
+
+                    <li><button class="item-btn"
+                      data-img="Recomendaciones/All-in-one.jpg"
+                      data-title="PC All-in-One HP 22'' Celeron"
+                      data-desc="Computadora All-in-One de 22 pulgadas con SSD y Windows 11, ideal para tareas administrativas."
+                      data-price="S/ 1499.00">HP AIO 22"</button></li>
+                  </ul>
+                </div>
+
+                <!-- DISEÑO -->
+                <div class="cat">
+                  <button class="cat-header" aria-expanded="false">Diseño</button>
+                  <ul class="cat-list">
+                    <li><button class="item-btn"
+                      data-img="Recomendaciones/MacBook Pro.jpg"
+                      data-title="MacBook Pro 2023 M3 14''"
+                      data-desc="Laptop profesional con chip M3, pantalla Liquid Retina XDR y 1TB SSD. Ideal para diseño gráfico y edición."
+                      data-price="S/ 8999.00">MacBook Pro M3</button></li>
+
+                    <li><button class="item-btn"
+                      data-img="Recomendaciones/Mouse para diseño.jpg"
+                      data-title="Logitech MX Master 3S para Mac"
+                      data-desc="Mouse profesional silencioso, precisión avanzada y ergonomía. Ideal para diseño y productividad."
+                      data-price="S/ 399.00">MX Master 3S</button></li>
+
+                    <li><button class="item-btn"
+                      data-img="Recomendaciones/SSD portatil NVMe.jpg"
+                      data-title="SSD Portátil Samsung T5 EVO 2TB"
+                      data-desc="Disco externo portátil de 2TB ideal para almacenar proyectos de diseño y multimedia."
+                      data-price="S/ 499.00">Samsung T5 EVO 2TB</button></li>
+                  </ul>
+                </div>
+
+                <!-- REDES Y SEGURIDAD -->
+                <div class="cat">
+                  <button class="cat-header" aria-expanded="false">Redes y seguridad</button>
+                  <ul class="cat-list">
+                    <li><button class="item-btn"
+                      data-img="Recomendaciones/Router Wi-Fi.jpg"
+                      data-title="Router Grandstream GWN7052"
+                      data-desc="Router Wi-Fi de doble banda con funciones de seguridad avanzadas para pequeñas oficinas."
+                      data-price="S/ 349.00">Router GWN7052</button></li>
+
+                    <li><button class="item-btn"
+                      data-img="Recomendaciones/Firewalls UTM.jpg"
+                      data-title="Firewall Zyxel USG60W"
+                      data-desc="Firewall empresarial con Wi-Fi integrado, protección avanzada y múltiples WAN para alta disponibilidad."
+                      data-price="S/ 1299.00">Firewall USG60W</button></li>
+
+                    <li><button class="item-btn"
+                      data-img="Recomendaciones/Switch.jpg"
+                      data-title="Switch 16 Puertos 10/100Mbps"
+                      data-desc="Switch no administrable de 16 puertos para redes de oficina, soporte para escritorio y rack."
+                      data-price="S/ 199.00">Switch 16 Puertos</button></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!-- =================== ASESORES =================== -->
+          <li class="has-submenu">
+            <a href="#" class="nav-link asesores-link" aria-haspopup="true" aria-expanded="false">Asesores ▾</a>
+
+            <div class="submenu" id="asesores-panel" role="menu" aria-hidden="true">
+              <div class="submenu-header">
+                <h3>Asesores por sede</h3>
+                <button id="close-asesores" aria-label="Cerrar">✕</button>
+              </div>
+
+              <div class="submenu-body">
+
+                <!-- AREQUIPA -->
+                <div class="cat">
+                  <button class="cat-header" aria-expanded="false">Arequipa</button>
+                  <ul class="cat-list">
+                    <li><button class="asesor-btn"
+                      data-img="Asesores/asesor1_Arequipa.jpg"
+                      data-title="Mario Julio de la Torre"
+                      data-desc="Especialista en equipos de cómputo y tecnología de oficina. 
+                      Ayuda a los clientes a encontrar soluciones eficientes y duraderas según su presupuesto. 
+                      Brinda recomendaciones técnicas y seguimiento postventa para garantizar la satisfacción total."
+                      data-contacto="mario.delatorre@maxitech.com.pe">Mario Julio de la Torre</button></li>
+
+                    <li><button class="asesor-btn"
+                      data-img="Asesores/asesor2_Arequipa.jpg"
+                      data-title="Lucía Ramos Paredes"
+                      data-desc="Con amplia experiencia en ventas tecnológicas, ofrece atención personalizada 
+                      y orientación en productos para el hogar y el trabajo remoto. Su prioridad es brindar 
+                      confianza y acompañamiento durante todo el proceso de compra."
+                      data-contacto="lucia.ramos@maxitech.com.pe">Lucía Ramos Paredes</button></li>
+
+                    <li><button class="asesor-btn"
+                      data-img="Asesores/asesor3_Arequipa.jpg"
+                      data-title="Fernando Gutiérrez Cárdenas"
+                      data-desc="Enfocado en tecnología de alto rendimiento, asesora a profesionales, 
+                      empresas y gamers en la elección de equipos potentes y actualizados. 
+                      Garantiza la mejor experiencia de compra con un enfoque en calidad y rendimiento."
+                      data-contacto="fernando.gutierrez@maxitech.com.pe">Fernando Gutiérrez Cárdenas</button></li>
+                  </ul>
+                </div>
+
+                <!-- LIMA -->
+                <div class="cat">
+                  <button class="cat-header" aria-expanded="false">Lima</button>
+                  <ul class="cat-list">
+                    <li><button class="asesor-btn"
+                      data-img="Asesores/asesor1_Lima.jpg"
+                      data-title="Valeria Campos Navarro"
+                      data-desc="Apasionada por la innovación, ofrece soluciones tecnológicas 
+                      que se adaptan a las necesidades de cada cliente. Recomienda laptops, 
+                      dispositivos inteligentes y equipos empresariales con un enfoque práctico y profesional."
+                      data-contacto="valeria.campos@maxitech.com.pe">Valeria Campos Navarro</button></li>
+
+                    <li><button class="asesor-btn"
+                      data-img="Asesores/asesor2_Lima.jpg"
+                      data-title="Jorge Armando Villanueva"
+                      data-desc="Combina experiencia comercial con conocimientos técnicos. 
+                      Ayuda a los clientes a seleccionar productos confiables y brinda 
+                      soporte en configuraciones, mantenimiento y garantías de equipos adquiridos."
+                      data-contacto="jorge.villanueva@maxitech.com.pe">Jorge Armando Villanueva</button></li>
+
+                    <li><button class="asesor-btn"
+                      data-img="Asesores/asesor3_Lima.jpg"
+                      data-title="Paola García Soto"
+                      data-desc="Experta en identificar oportunidades tecnológicas para empresas y usuarios avanzados. 
+                      Ofrece un servicio completo, desde la cotización hasta la implementación de soluciones personalizadas."
+                      data-contacto="paola.garcia@maxitech.com.pe">Paola García Soto</button></li>
+                  </ul>
+                </div>
+
+                <!-- CUSCO -->
+                <div class="cat">
+                  <button class="cat-header" aria-expanded="false">Cusco</button>
+                  <ul class="cat-list">
+                    <li><button class="asesor-btn"
+                      data-img="Asesores/asesor1_Cusco.jpg"
+                      data-title="Diego Palomino Quispe"
+                      data-desc="Especialista en productos de conectividad y redes. 
+                      Aconseja a clientes que buscan mejorar su infraestructura tecnológica con routers, 
+                      switches y dispositivos modernos, priorizando la eficiencia y el rendimiento."
+                      data-contacto="diego.palomino@maxitech.com.pe">Diego Palomino Quispe</button></li>
+
+                    <li><button class="asesor-btn"
+                      data-img="Asesores/asesor2_Cusco.jpg"
+                      data-title="Karina Mendoza Ticona"
+                      data-desc="Enfocada en ofrecer una experiencia de compra cercana y confiable. 
+                      Ayuda a los clientes a elegir los mejores productos para su día a día, 
+                      brindando siempre un trato amable y soluciones rápidas."
+                      data-contacto="karina.mendoza@maxitech.com.pe">Karina Mendoza Ticona</button></li>
+
+                    <li><button class="asesor-btn"
+                      data-img="Asesores/asesor3_Cusco.jpg"
+                      data-title="Óscar López Herrera"
+                      data-desc="Asesora en proyectos tecnológicos integrales para oficinas, 
+                      negocios y hogares inteligentes. Ofrece recomendaciones basadas en innovación, 
+                      ahorro energético y compatibilidad entre dispositivos."
+                      data-contacto="oscar.lopez@maxitech.com.pe">Óscar López Herrera</button></li>
+                  </ul>
+                </div>
+
+              </div>
+            </div>
+          </li>
+
+          <li><a href="Blog.html" class="nav-link">Blog</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- =================== CONTENIDO =================== -->
+  <main class="container main-content" id="main-content">
+    <section id="inicio" class="section active">
+      <h1>Bienvenido a Recomendaciones</h1>
+      <p>Selecciona una categoría o un asesor para ver su información.</p>
+    </section>
+    
+    <section id="detalle-producto" class="section">
+      <div class="detalle-card" aria-live="polite">
+        <img id="detalle-img" src="#" alt="Imagen de asesor" />
+        <div class="detalle-info">
+          <h2 id="detalle-title">Selecciona un elemento</h2>
+          <p id="detalle-desc">Aquí aparecerá la descripción y contacto del asesor seleccionado.</p>
+          <p id="detalle-price" class="price"></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =================== PIE =================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year"></span> MiCatálogo — Proyecto de Recomendaciones</small>
+    </div>
+  </footer>
+
+  <script src="JavaScript1/js_recomendaciones.js"></script>
+</body>
+</html>
+
+
+

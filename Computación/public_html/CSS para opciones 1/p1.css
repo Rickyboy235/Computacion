@@ -1,0 +1,676 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 30 ago. 2025, 1:19:50 p. m.
+    Author     : ASUS
+*/
+body {
+    background-image: url("../fondos_banners_logos/fondo1.jpg"); 
+    background-size: cover;
+    background-position: center; 
+}
+
+/* Fondo del encabezado */
+#cabeza {
+    background-color: #222; 
+    padding: 10px;
+    border: 2px solid #007BFF;
+}
+
+/* Barra superior (logo, buscador, botones) */
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem; /*AGREGADO para espacio en movil*/
+}
+
+/* Nombre */
+.logo-nombre h2 {
+    margin: 0;
+    font-size: 28px;
+}
+
+/* Logo imagen */
+.logo-img img {
+    max-width: 120px;
+    height: auto;
+}
+
+/* Buscador */
+.buscador input {
+    border: 2px solid black;
+    border-radius: 4px;
+    padding: 5px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+/* Botones login y registro */
+.botones {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* espacio entre los elementos */
+}
+
+.logo-comprar img {
+    border-radius: 8px; /* opcional */
+    transition: transform 0.3s, opacity 0.3s;
+    cursor: pointer;
+}
+
+.logo-comprar img:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
+}
+
+.btn {
+    background-color: #007BFF;
+    color: white;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 16px;
+}
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/*Boton de Inicio de Sesión*/
+
+#login {
+   height: 25px;
+   width: 140px;
+   border: 2px #000000;
+   background-color: #5A00A5;
+   border-radius: 20px;
+}
+
+#login:hover {
+    background: #d0aaff;
+}
+
+/*Boton de Registro*/
+
+#register {
+   height: 25px;
+   width: 140px;
+   border: 2px #000000;
+   background-color: #5A00A5;
+   border-radius: 20px;
+}
+
+#register:hover {
+    background: #d0aaff;
+}
+
+/* Barra de opciones */
+.menu-opciones {
+    margin-top: 10px;
+    background-color: #111;
+    padding: 10px 0;
+    border-top: 1px solid #444;
+}
+.menu-opciones ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap; /*AGREGADO*/
+}
+.menu-opciones li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+.menu-opciones li a:hover {
+    color: #007BFF;
+}
+
+/* Contenedor de productos */
+.contenedor-productos {
+    display: flex;
+    justify-content: center;
+    gap: 0;
+    margin: 0 auto;
+    margin-bottom: 50px; /*distnacia entre opciones*/
+    flex-wrap: wrap; /*Agregado*/
+}
+
+.cuadro-producto {
+    width: 380px;
+    height: 450px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Contenedor de opciones */
+.contenedor-opciones {
+    display: flex;
+    justify-content: center;
+    gap: 0;
+    margin: 0 auto;
+    flex-wrap: wrap; /*Agregado*/
+}
+
+.cuadro-opcion {
+    width: 380px;
+    height: 450px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Imágenes */
+.imagen {
+    transition: transform 0.3s;
+    max-width: 100%;
+    height: auto;
+}
+
+.imagen:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
+}
+
+/* Tamaños específicos de imágenes */
+.img-producto {
+    width: 350px;
+    max-width: 100%; /*Agregado*/
+    height: 290px;
+    border-radius: 20px;
+}
+
+.img-banner {
+    width: 350px;
+    max-width: 100%; /*AGREGADO*/
+    height: 290px;
+    border-radius: 20px;
+}
+
+.img-opcion {
+    width: 300px;
+    max-width: 100%;
+    height: 300px;
+    border-radius: 20px;
+}
+
+/* Nombres de productos */
+#nombre {
+    color: white; 
+    margin-top: 0; 
+    display: inline-block;
+}
+
+#nombre:hover {
+    text-decoration: underline;
+}
+
+/* Precio de productos */
+#precio {
+    height: 35px; 
+    width: 50px; 
+    background-color: #007BFF; 
+    border: 2px solid black;
+}
+
+#precio:hover {
+    background: #0056b3;
+}
+
+/* Botones de opciones */
+#boton1, #boton2, #boton3, #boton4, #boton5 {
+    height: 45px; 
+    width: 220px; 
+    background-color: #007BFF;
+    border: 2px solid black;
+}
+
+#boton1:hover, #boton2:hover, #boton3:hover, #boton4:hover, #boton5:hover {
+    background: #0056b3;
+}
+
+
+#pie{
+    background-color:black;
+    border: 2px solid white;
+    border-radius:20px;
+}
+
+/* ========== MEDIA QUERIES ============ */
+
+@media (max-width: 1024px) {
+    .contenedor-productos,
+    .contenedor-opciones {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    /*Header*/
+    .top-bar {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+    
+    .logo-nombre h2 {
+        font-size: 24px;
+    }
+    
+    .buscador input {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    /* Menú */
+    .menu-opciones ul {
+        gap: 15px;
+        padding: 10px;
+    }
+    
+    .menu-opciones li a {
+        font-size: 16px;
+    }
+    
+    /* Productos y opciones */
+    .cuadro-producto,
+    .producto-opcion {
+        width: 45%;
+        min-width: 300px;
+        margin: 10px;
+    }
+    
+    .contendedor-productos,
+    .contenedor-opciones {
+        gap: 15px;
+        padding: 10px;
+    }
+}
+/* Móviles (hasta 480px) */
+@media (max-width: 480px) {
+    /* Header */
+    .logo-nombre h2 {
+        font-size: 20px;
+    }
+    
+    .logo-img img {
+        max-width: 80px;
+    }
+    
+    .buscador label {
+        font-size: 14px !important;
+    }
+    
+    .buscador input {
+        max-width: 250px;
+        font-size: 14px;
+    }
+    
+    .btn {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+    
+    /* Menú */
+    .menu-opciones ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    /* Productos y opciones - ocupan todo el ancho */
+    .cuadro-producto,
+    .cuadro-opcion {
+        width: 95%;
+        min-width: unset;
+        margin: 10px auto;
+    }
+    
+    /* Imágenes más pequeñas en móvil */
+    .img-producto,
+    .img-banner {
+        width: 100%;
+        height: auto;
+        max-width: 300px;
+    }
+    
+    .img-opcion {
+        width: 100%;
+        height: auto;
+        max-width: 250px;
+    }
+    
+    /* Ajustar tamaños de texto */
+    #nombre {
+        font-size: 14px;
+    }
+    
+    #precio {
+        width: auto;
+        padding: 5px 10px;
+    }
+    
+    #boton1, #boton2, #boton3, #boton4, #boton5 {
+        width: 180px;
+        font-size: 14px;
+    }
+}
+
+/* Móviles muy pequeños (hasta 360px) */
+@media (max-width: 360px) {
+    .cuadro-producto,
+    .cuadro-opcion {
+        width: 100%;
+    }
+    
+    .img-producto,
+    .img-banner,
+    .img-opcion {
+        max-width: 100%;
+    }
+}
+
+/* Modal - Iniciar Sesión y Registrarse*/
+.modal {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(6px);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    padding: 20px;
+    overflow-y: auto; /* ✅ Permite hacer scroll en el modal */
+}
+
+.modal:target {
+    display: flex;
+}
+
+/* CONTENEDOR DEL FORMULARIO */
+.modal-contenido {
+    background: rgba(255, 255, 255, 0.96);
+    border-radius: 12px;
+    padding: 30px;
+    width: 90%;
+    max-width: 420px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    position: relative;
+    animation: aparecer 0.3s ease;
+    max-height: 90vh;          /* ✅ Limita la altura visible */
+    overflow-y: auto;          /* ✅ Agrega barra interna si es necesario */
+}
+
+/* ANIMACIÓN */
+@keyframes aparecer {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+/* BOTÓN CERRAR */
+.cerrar {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    text-decoration: none;
+    font-size: 24px;
+    color: #333;
+    font-weight: bold;
+}
+
+.cerrar:hover {
+    color: #007BFF;
+}
+
+/* FORMULARIO */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    text-align: center;
+}
+
+.login-form h2 {
+    font-size: 22px;
+    color: #333;
+}
+
+.login-form p {
+    font-size: 14px;
+    color: #333;
+}
+
+.login-form input[type="email"],
+.login-form input[type="password"] {
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#mandar {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#mandar:hover {
+    background-color: #0056b3;
+}
+
+/* ENLACES Y REDES */
+.link {
+    font-size: 13px;
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+
+.social img {
+    width: 24px;
+}
+
+/* ---- RESPONSIVE DESIGN ---- */
+
+/* Tablets medianas */
+@media (max-width: 768px) {
+    .modal-contenido {
+        max-width: 360px;
+        padding: 25px;
+    }
+}
+
+/* Teléfonos grandes */
+@media (max-width: 480px) {
+    .modal {
+        align-items: flex-start;   /* ✅ Alinea arriba cuando hay scroll */
+        padding-top: 30px;
+    }
+
+    .modal-contenido {
+        width: 95%;
+        padding: 20px;
+        max-width: 340px;
+        max-height: 90vh;         /* ✅ No sobrepasa la pantalla */
+        overflow-y: auto;         /* ✅ Deslizador interno */
+    }
+
+    .login-form h2 {
+        font-size: 18px;
+    }
+
+    .login-form p {
+        font-size: 13px;
+    }
+
+    #mandar {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+/* Teléfonos muy pequeños */
+@media (max-width: 360px) {
+    .modal-contenido {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .login-form {
+        gap: 10px;
+    }
+
+    .login-form h2 {
+        font-size: 16px;
+    }
+
+    #mandar {
+        font-size: 13px;
+        padding: 8px;
+    }
+}
+
+/* Modal - Registrarse */
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(6px);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  overflow-y: auto; /* permite desplazarse en pantallas pequeñas */
+}
+
+.modal:target {
+  display: flex;
+}
+
+/* --- CONTENEDOR DEL FORMULARIO --- */
+.login-container {
+  background-color: rgba(255, 255, 255, 0.92);
+  padding: 30px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  margin: 40px 0; /* agrega espacio para scroll */
+}
+
+/* BOTÓN CERRAR */
+.cerrar {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    text-decoration: none;
+    font-size: 24px;
+    color: #333;
+    font-weight: bold;
+}
+
+.cerrar:hover {
+    color: #007BFF;
+}
+
+/* --- FORMULARIO --- */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.login-form h2 {
+  text-align: center;
+  color: #007BFF;
+}
+
+.login-form label {
+  font-weight: bold;
+}
+
+.login-form input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.login-form button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.login-form button:hover {
+  background-color: purple;
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 480px) {
+  .login-container {
+    width: 95%;
+    padding: 20px;
+  }
+
+  .login-form {
+    gap: 8px;
+  }
+
+  .login-form input {
+    font-size: 14px;
+  }
+
+  .login-form button {
+    font-size: 14px;
+  }
+}
